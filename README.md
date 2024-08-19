@@ -1,119 +1,250 @@
-<!DOCTYPE html>
-<html lang="pl">
+# Adjusting the provided HTML template to include the requested content in Polish.
+polish_html_content = """
+<!doctype html>
+<html class="no-js" lang="pl">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historia Adriana – Droga do bycia Sportowcem</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            max-width: 1200px;
-        }
-        header {
-            background-color: #004aad;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        header p {
-            margin: 10px 0 0;
-            font-size: 1.2em;
-        }
-        section {
-            padding: 20px 0;
-            margin-bottom: 20px;
-        }
-        section h2 {
-            font-size: 2em;
-            border-bottom: 2px solid #004aad;
-            padding-bottom: 10px;
-        }
-        section p {
-            font-size: 1.2em;
-            line-height: 1.6em;
-        }
-        .gallery img {
-            width: 100%;
-            max-width: 300px;
-            margin: 10px;
-            display: inline-block;
-            vertical-align: top;
-        }
-        .quote {
-            background-color: #e0f7fa;
-            color: #00796b;
-            padding: 20px;
-            font-size: 1.5em;
-            text-align: center;
-            margin: 20px 0;
-            border-left: 5px solid #00796b;
-        }
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background-color: #004aad;
-            color: #fff;
-        }
-    </style>
+    <!-- meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!--font-family-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
+    
+    <!-- title of site -->
+    <title>Historia Adriana</title>
+
+    <!-- For favicon png -->
+    <link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
+   
+    <!--font-awesome.min.css-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <!--flat icon css-->
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+
+    <!--animate.css-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <!--owl.carousel.css-->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    
+    <!--bootstrap.min.css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <!-- bootsnav -->
+    <link rel="stylesheet" href="assets/css/bootsnav.css">    
+    
+    <!--style.css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!--responsive.css-->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <h1>Historia Adriana – Droga do bycia Sportowcem</h1>
-            <p>Od marzeń do rzeczywistości</p>
-        </header>
+    <!-- Top Area -->
+    <header class="top-area">
+        <div class="header-area">
+            <!-- Start Navigation -->
+            <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
+                <div class="container">
+                    <!-- Start Header Navigation -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="index.html">Podróż Adriana</a>
+                    </div><!--/.navbar-header-->
+                    <!-- End Header Navigation -->
 
-        <section>
-            <h2>Wprowadzenie</h2>
-            <p>Adrian był zwykłym pracownikiem, który większość swoich dni spędzał na monotonnej pracy, siedząc na zaciskarce do papieru, znanej w firmie jako "kółko". Podczas jednej z rozmów ze współpracownikami, znudzony rutyną i brakiem wyzwań, wpadł na pomysł zostania triathlonistą. To był moment, który zmienił jego życie na zawsze.</p>
-        </section>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+                        <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                            <li class="smooth-menu active"><a href="#welcome-hero">Strona główna</a></li>
+                            <li class="smooth-menu"><a href="#about">O mnie</a></li>
+                            <li class="smooth-menu"><a href="#story">Historia</a></li>
+                            <li class="smooth-menu"><a href="#future-plans">Plany na przyszłość</a></li>
+                            <li class="smooth-menu"><a href="#contact">Kontakt</a></li>
+                        </ul><!--/.nav -->
+                    </div><!-- /.navbar-collapse -->
+                </div><!--/.container-->
+            </nav><!--/nav-->
+            <!-- End Navigation -->
+        </div><!--/.header-area-->
+        <div class="clearfix"></div>
+    </header><!-- /.top-area-->
+    <!-- Top Area End -->
+    
+    <!-- Welcome Hero Start -->
+    <section id="welcome-hero" class="welcome-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="header-text">
+                        <h2>Cześć, jestem Adrian</h2>
+                        <p>Moja podróż do zostania triathlonistą</p>
+                    </div><!--/.header-text-->
+                </div><!--/.col-->
+            </div><!-- /.row-->
+        </div><!-- /.container-->
+    </section><!--/.welcome-hero-->
+    <!-- Welcome Hero End -->
 
-        <section>
-            <h2>Początki</h2>
-            <p>Adrian, choć początkowo nie był aktywny fizycznie, postanowił zacząć od małych kroków. Zaczął biegać, pływać i jeździć na rowerze, ucząc się podstaw każdego z tych sportów. Stopniowo, jego pasja i zaangażowanie rosły.</p>
-        </section>
+    <!-- About Start -->
+    <section id="about" class="about">
+        <div class="section-heading text-center">
+            <h2>O mnie</h2>
+        </div>
+        <div class="container">
+            <div class="about-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="single-about-txt">
+                            <h3>
+                                Moja podróż rozpoczęła się, gdy znudzony pracą, siedząc na zaciskarce do papieru, rozmawiałem z kolegami. To właśnie wtedy wpadłem na pomysł, by zostać triathlonistą.
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--/.about-->
+    <!-- About End -->
 
-        <section>
-            <h2>Wyzwania</h2>
-            <p>Droga do bycia triathlonistą nie była łatwa. Adrian musiał pokonać wiele trudności, od braku doświadczenia po kontuzje, które czasem wydawały się nie do przezwyciężenia. Jednak jego determinacja nie pozwoliła mu się poddać.</p>
-        </section>
+    <!-- Story Start -->
+    <section id="story" class="story">
+        <div class="section-heading text-center">
+            <h2>Moja Historia</h2>
+        </div>
+        <div class="container">
+            <div class="story-content">
+                <p>
+                    Choć od dawna jeździłem na rowerze, nigdy wcześniej nie myślałem o triathlonie. Po podjęciu decyzji o rozpoczęciu treningów, pojawiły się pierwsze problemy - brak funduszy na strój, nowy rower oraz wszystkie potrzebne sprzęty. 
+                </p>
+                <p>
+                    Rodzina na początku nie rozumiała mojego pomysłu, ale byłem wytrwały i dążyłem do spełnienia swojego marzenia. Wiele czytałem, oglądałem filmy na YouTube i studiowałem książki, aby dobrze przygotować się do mojego pierwszego wyścigu.
+                </p>
+                <p>
+                    W zeszłym roku wziąłem udział w moim pierwszym triathlonie, a sukcesy zaczęły się pojawiać. Zacząłem angażować w mój świat sportu również moją narzeczoną.
+                </p>
+            </div>
+        </div>
+    </section><!--/.story-->
+    <!-- Story End -->
 
-        <section>
-            <h2>Sukcesy</h2>
-            <p>Z czasem, dzięki ciężkiej pracy i determinacji, Adrian zaczął odnosić pierwsze sukcesy. Uczestniczył w lokalnych zawodach, a jego wyniki stale się poprawiały. To były momenty, które potwierdziły, że jest na właściwej drodze.</p>
-        </section>
+    <!-- Future Plans Start -->
+    <section id="future-plans" class="future-plans">
+        <div class="section-heading text-center">
+            <h2>Plany na przyszłość</h2>
+        </div>
+        <div class="container">
+            <div class="future-plans-content">
+                <p>
+                    Kiedy zakończę swoją karierę sportową, po osiągnięciu wieku 30 lat, planuję stać się człowiekiem wielu pasji. Jedną z nich będzie gra na pianinie.
+                </p>
+            </div>
+        </div>
+    </section><!--/.future-plans-->
+    <!-- Future Plans End -->
 
-        <section>
-            <h2>Dążenia na przyszłość</h2>
-            <p>Adrian nie zamierza się zatrzymywać. Jego celem jest start w zawodach Ironman, a także inspirowanie innych do podejmowania wyzwań i dążenia do realizacji swoich marzeń, niezależnie od okoliczności.</p>
-        </section>
+    <!-- Contact Start -->
+    <section id="contact" class="contact">
+        <div class="section-heading text-center">
+            <h2>Kontakt</h2>
+        </div>
+        <div class="container">
+            <div class="contact-content">
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-5 col-sm-6">
+                        <div class="single-contact-box">
+                            <div class="contact-form">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-sm-6 col-xs-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="name" placeholder="Imię*" name="name">
+                                            </div><!--/.form-group-->
+                                        </div><!--/.col-->
+                                        <div class="col-sm-6 col-xs-12">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" id="email" placeholder="Email*" name="email">
+                                            </div><!--/.form-group-->
+                                        </div><!--/.col-->
+                                    </div><!--/.row-->
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="subject" placeholder="Temat" name="subject">
+                                            </div><!--/.form-group-->
+                                        </div><!--/.col-->
+                                    </div><!--/.row-->
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <textarea class="form-control" rows="8" id="comment" placeholder="Wiadomość"></textarea>
+                                            </div><!--/.form-group-->
+                                        </div><!--/.col-->
+                                    </div><!--/.row-->
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="single-contact-btn">
+                                                <a class="contact-btn" href="#"
+                                                <a class="contact-btn" href="#" role="button">Wyślij</a>
+                                            </div><!--/.single-contact-btn-->
+                                        </div><!--/.col-->
+                                    </div><!--/.row-->
+                                </form><!--/form-->
+                            </div><!--/.contact-form-->
+                        </div><!--/.single-contact-box-->
+                    </div><!--/.col-->
+                </div><!--/.row-->
+            </div><!--/.contact-content-->
+        </div><!--/.container-->
+    </section><!--/.contact-->
+    <!-- Contact End -->
 
-        <section class="gallery">
-            <h2>Galeria Zdjęć</h2>
-            <img src="images/adrian1.jpg" alt="Adrian na treningu">
-            <img src="images/adrian2.jpg" alt="Adrian na zawodach">
-            <img src="images/adrian3.jpg" alt="Adrian na podium">
-        </section>
+    <!-- Footer Start -->
+    <footer id="footer-copyright" class="footer-copyright">
+        <div class="container">
+            <div class="hm-footer-copyright text-center">
+                <p>
+                    &copy; 2024 Podróż Adriana. Projekt i rozwój: Adrian.
+                </p><!--/p-->
+            </div><!--/.text-center-->
+        </div><!--/.container-->
 
-        <section class="quote">
-            <p>"Nie ważne jak zaczynasz, ważne jak kończysz. Każdy dzień to nowa szansa na bycie lepszym niż wczoraj."</p>
-        </section>
+        <div id="scroll-Top">
+            <div class="return-to-top">
+                <i class="fa fa-angle-up " id="scroll-top" ></i>
+            </div>
+        </div><!--/.scroll-Top-->
+    </footer><!--/.footer-copyright-->
+    <!-- Footer End -->
 
-        <footer>
-            <p>Kontakt: adrian@example.com | Znajdź mnie na <a href="#">Facebooku</a>, <a href="#">Instagramie</a></p>
-        </footer>
-    </div>
+    <!-- Include all js compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootsnav.js"></script>
+    <script src="assets/js/jquery.sticky.js"></script>
+    <script src="assets/js/progressbar.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="assets/js/custom.js"></script>
 </body>
+
 </html>
